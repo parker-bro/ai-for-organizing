@@ -1,7 +1,7 @@
 # Volunteer Onboarding: Automate Everything Except Judgment
 
 **Category:** Volunteer Engagement · **Type:** Workflow · **License:** CC BY 4.0
-**Visual:** [Volunteer Onboarding Visuals](https://docs.google.com/presentation/d/1UL65MZlfFADTE-kV9iK3LnG5qSw4o8UyG_c6bEDNcZo/edit). Lead with the "Every Path" map slide.
+**Visual:** [Volunteer Onboarding Visuals](https://docs.google.com/presentation/d/1tL_y3qTbsalg2yBNouJ1_39k1SnZV0V-S_nxgedPSY4/edit). Lead with the "Every Path" map slide.
 
 Before this, volunteer onboarding ran through one or two people. Volunteers often sat in our
 queue for weeks without a response, and many gave up before we got to them. Now onboarding runs as
