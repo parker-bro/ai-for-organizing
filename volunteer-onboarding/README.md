@@ -1,6 +1,6 @@
 # Volunteer Onboarding: Automate Everything Except Judgment
 
-**Category:** Volunteer Engagement · **Type:** Workflow · **License:** CC BY 4.0
+**Category:** Volunteer Engagement · **Type:** Workflow + setup skill · **License:** CC BY 4.0
 **Visual:** [Volunteer Onboarding Visuals](https://docs.google.com/presentation/d/1tL_y3qTbsalg2yBNouJ1_39k1SnZV0V-S_nxgedPSY4/edit). Lead with the "Every Path" map slide.
 
 Before this, volunteer onboarding ran through one or two people. Volunteers often sat in our
@@ -120,14 +120,16 @@ pitching the org and getting to know volunteers, not chasing calendars.
 
 ## How someone else would use this
 
-- **Without our stack:** the stage table, detour table and guardrails are the playbook. Map them
+- **Set it up with Claude:** install [`SKILL.md`](SKILL.md) in this folder and say "set up volunteer
+  onboarding". It interviews you, maps the stages to your tools, writes every volunteer email, gives
+  you a daily routine you can run by hand from day one, walks you through the first three
+  automations, and hands you a build list for the rest.
+- **Without an AI assistant:** the stage table, detour table and guardrails are the playbook. Map them
   onto whatever you use (a form tool, a shared calendar, email, Slack) and decide which steps you
   automate first. Start with confirmations, reminders and the re-invite rules.
-- **With an AI assistant:** give it this document as the operating rules for your onboarding, and
-  have it compose reminders, nudges and rosters, while the three human clicks stay human.
 - **Our build, for reference:** Airtable (records, forms, interfaces), Google Calendar (host
   availability), Gmail, Slack, and a set of small scheduled scripts run by an AI agent. The scripts
-  are tied to our schema, so we're sharing the workflow, not the code.
+  are tied to our schema, so we're sharing the workflow and the setup planner, not the code.
 
 ---
 

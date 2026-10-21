@@ -6,6 +6,7 @@ description: >-
   work produces). Checks every item against existing work so nothing gets
   duplicated, stages one numbered review, and writes nothing until a person approves. Use when
   someone says "triage this meeting", "process this transcript", or "what came out of that meeting".
+  On first use, or when someone says "set up meeting to actions", it walks them through setup first.
 license: MIT
 ---
 
@@ -27,7 +28,8 @@ It is built on three beliefs, each learned the hard way:
 
 ## Configure once
 
-Fill this in for your org. Everything below refers to these names, never to your tool directly.
+Everything below refers to these names, never to your tool directly. You can fill the block in by
+hand, or leave the placeholders and the skill will walk you through it (see **Step 0**).
 
 ```yaml
 tracker: "Airtable | Asana | Notion | Linear | Google Sheet | ..."
@@ -45,6 +47,63 @@ sensitive_field: "Visibility"             # optional; see the privacy rule below
 ```
 
 ---
+
+## Step 0: Guided setup
+
+Run this **before anything else** when the config still has placeholders (`"Name A"`,
+`"Airtable | Asana | ..."`), when no config was provided, or when someone says "set up meeting to
+actions". Don't triage a meeting until setup is finished. If a transcript arrived with the request,
+say you'll get to it once setup is done.
+
+Ask **one question at a time**, propose a sensible default with each, and accept "you pick".
+Setup follows the same rule as the rest of the skill: **nothing is created or changed in their
+tracker without a yes.**
+
+**1. The tracker.** Ask which tool the team uses. Then check whether you can actually reach it:
+if you have tools for it, list the tables, lists, projects or databases you can see.
+- **You can reach it:** show what you found and move on.
+- **You can't:** say so plainly. Tell them to connect it (in Claude: Settings → Connectors) and come
+  back. Or offer **paste mode**: at the start of every run they paste the current rows of each
+  destination, and you hand back the records to add by hand. Be clear about the limit: duplicate
+  checking is only as good as what they paste.
+
+**2. Give every lane a home.** Propose a destination for each lane from what you found. For a lane
+with no home, offer three choices:
+- **Create it** with the minimal fields below. Create it only after a yes.
+- **Fold it into another home.** Questions can live in the decision log. Ideas can be tasks with a
+  "someday" status.
+- **Skip the lane.** Those items then appear in the review only, and are never written.
+
+| Home | Minimal fields |
+|---|---|
+| Tasks | Name · Owner · Status · Project · Notes |
+| Decision log | Decision or question · Type (Decision / Question) · Decided by · Why · Date · Status |
+| Feedback (bugs) | What's wrong · Where · Reported by · Date · Linked fix task |
+| Deliverables | Name · Type (form, doc, template, dashboard, automation, SOP) · Status (Not created yet / Draft / Live) · Link · Needs approval · Linked tasks |
+
+Most teams already have tasks. Most don't have the other three, and the decision log is the one
+that matters most: without it, decisions get filed as tasks and reversals go unnoticed.
+
+**3. Who can own a record.** Ask for the names. If the tracker has a people or members list,
+propose names from it. Explain that anyone else (volunteers, partners, candidates) goes in the notes.
+
+**4. Where the review happens.** In this chat (the default), or in a Slack thread. If Slack, explain
+the two-run pattern in Step 5 so they know to say "process my reply".
+
+**5. Visibility.** Ask: does anything in the tracker post rows automatically to a channel, an email
+list or a public page? If yes, find a visibility field or offer to add one (Internal / Team /
+Public), and every row this skill writes defaults to Internal. If nothing broadcasts, skip it.
+
+**6. Save the config.** Show the filled-in block. Then save it where you'll see it next time:
+- If you can edit files (Claude Code, for example), write it into this file's config block.
+- In a Claude Project, ask them to paste it into the project instructions.
+- Otherwise, ask them to keep it and paste it at the start of each run.
+Never say the config is saved unless you actually wrote it somewhere.
+
+**7. Practice run.** Offer a dry run on the sample meeting in
+[`examples/maple-street-standup.md`](examples/maple-street-standup.md): stage the review only, write
+nothing, then compare it with the answer key in that file. Tell them which rules the sample tests.
+When they're happy, they're set up: next time, they just paste a transcript.
 
 ## Steps
 
