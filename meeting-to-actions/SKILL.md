@@ -171,5 +171,5 @@ routing call if they can click through to the record.
 
 ---
 
-_Built by Alex Parks. Field-tested on 44 consecutive meetings at a volunteer-run political organization (Jun–Oct 2026).
+_Built by Alex Parks for a volunteer-run political organization, 2026.
 Shared for the AI for Organizing Prize under the MIT License._
