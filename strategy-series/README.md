@@ -1,11 +1,13 @@
 # Strategy Series
 
-A drop-in AI skill that runs a planning series end to end: from the first look at everything on
-your plate to a short list of goals your leaders agree to, on schedule.
+A goal planner for the person running a team's or organization's planning. Point it at any unit,
+from one department to a whole portfolio, and it runs the series end to end: from the first look at
+everything on your plate to a full set of goals your leaders agree to, on schedule.
 
 **Nothing in scope gets ignored, and only a few things get chosen.**
 
-It works before and after each session, never live in the room. It proposes; a person approves.
+It's built for the facilitator, not as an agent for the whole team. It works before and after each
+session, never live in the room. It proposes; a person approves.
 Nothing is written, sent or booked until someone says "go".
 
 ## What it does

@@ -1,7 +1,8 @@
 ---
 name: strategy-series
 description: >-
-  A goal-setting companion that runs a strategy series end to end, from the first look at
+  A goal planner for whoever facilitates a team's or organization's planning, for any unit from
+  one department to a whole portfolio. It runs a strategy series end to end, from the first look at
   everything on your plate to a short list of goals your leaders agree to. It works before and
   after each session, never live in the room. Six modes: setup (interview you and write the series
   profile), plan (propose the session calendar), intake (check that nothing in scope has been
