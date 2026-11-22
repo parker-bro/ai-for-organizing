@@ -13,6 +13,14 @@ It started as volunteer onboarding for a volunteer-run organization. Before it, 
 through one or two people, and volunteers sat in a queue for weeks and gave up. That build is the
 worked example below, in full.
 
+**Three steps, three human clicks:**
+1. **Intake.** Take the request and file it: one record per person, deduped, with a person
+   approving who moves on.
+2. **Connect.** Put them in front of a person: an onboarding session, a call, or a kickoff, booked
+   through their own link.
+3. **Access.** Grant what they joined for: tools, channels, materials or a first assignment,
+   once the paperwork checks out.
+
 ---
 
 ## The method
@@ -28,7 +36,8 @@ worked example below, in full.
 
 ## The pattern: six stages
 
-Most flows use most of these. Mark the ones yours skips.
+The three steps, in detail. Intake is stages 1 and 2, Connect is 3 and 4, Access is 5 and 6. Most
+flows use most of them. Mark the ones yours skips.
 
 | Stage | What happens | Who acts | Skip it when |
 |---|---|---|---|
