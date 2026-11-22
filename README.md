@@ -10,6 +10,6 @@ Workflows from a volunteer-run political organization, shared so other organizer
 
 **Visuals**
 - [Intake → Access Visuals (volunteer onboarding)](https://docs.google.com/presentation/d/1tL_y3qTbsalg2yBNouJ1_39k1SnZV0V-S_nxgedPSY4/edit)
-- [Meeting Triage Visual](https://docs.google.com/presentation/d/10yx6yWia_UloQsusIIN0KxI6DLqW53ZGnv_sGcLCW-M/edit)
+- [Meeting → Actions Visual](https://docs.google.com/presentation/d/10yx6yWia_UloQsusIIN0KxI6DLqW53ZGnv_sGcLCW-M/edit)
 
 Built by Alex Parks, 2026.
