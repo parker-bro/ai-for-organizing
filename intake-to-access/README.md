@@ -5,7 +5,9 @@
 
 For any flow where people apply, a person decides, and access follows: volunteers, new members, a
 cohort, a freelance roster, clients. The people doing the deciding should spend their time on
-judgment and relationships, not on chasing calendars and paperwork.
+judgment and relationships, not on chasing calendars and paperwork. Three human clicks, and the
+rest is automated: confirmations, reminders, cancellations, no-shows and rebookings, on whatever
+calendar, form and email your team already uses.
 
 It started as volunteer onboarding for a volunteer-run organization. Before it, onboarding ran
 through one or two people, and volunteers sat in a queue for weeks and gave up. That build is the
