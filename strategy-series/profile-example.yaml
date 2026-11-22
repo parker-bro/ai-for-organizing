@@ -1,0 +1,52 @@
+# A filled example of the series profile. Everything here is made up.
+# Copy it, replace every value, and delete anything that doesn't apply.
+
+org: "Northlight Studio"
+series: "2027 planning"
+period: "2027-01-01 to 2027-12-31"
+ratify_by: "2027-01-20"
+people:
+  drafter: "Sam (operations lead)"
+  approver: "Rae (managing director)"
+  decision_makers: ["Rae", "Sam", "Priya", "Jordan"]
+standing_goals:
+  - "Keep two out of three clients coming back for a second project"
+  - "Stop losing money on fixed-fee work"
+  - "Hire into the two roles we keep freelancing"
+goal_framework: goals_kpis
+framework_rules:
+  limits: "at most 4 goals, not 5"   # an override on top of the built-in
+homes:
+  tracker: "Asana, project 'Studio work 2027'"
+  decisions: "a 'Decisions' tab in the planning doc"
+  goals_doc: "https://docs.example.com/northlight-2027-goals"
+  not_doing_list: "the 'Not this year' heading in the goals doc"
+  deck: "https://slides.example.com/northlight-2027-planning"
+sessions:
+  - key: s1
+    title: "What 2026 actually told us"
+    date: "2026-12-02"
+    minutes: 90
+    agenda_doc: "https://docs.example.com/northlight-s1"
+    covers: ["look back"]
+  - key: s2
+    title: "Which clients and projects we chase"
+    date: "2026-12-09"
+    minutes: 120
+    agenda_doc: "https://docs.example.com/northlight-s2"
+    covers: ["clients", "pricing"]
+  - key: s3
+    title: "Who we hire and who we keep freelance"
+    date: "2026-12-16"
+    minutes: 90
+    agenda_doc: "https://docs.example.com/northlight-s3"
+    covers: ["people"]
+  - key: s4
+    title: "Agree the 2027 goals"
+    date: "2027-01-13"
+    minutes: 60
+    agenda_doc: "https://docs.example.com/northlight-s4"
+    covers: ["ratify"]
+solo_streams:
+  - "Office lease renewal, owned by Rae"
+  - "Software spend review, owned by Sam"
