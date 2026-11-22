@@ -1,7 +1,7 @@
 # Intake → Access: Automate Everything Except Judgment
 
 **Type:** Playbook · **License:** CC BY 4.0
-**Visual:** [Onboarding Visuals](https://docs.google.com/presentation/d/1tL_y3qTbsalg2yBNouJ1_39k1SnZV0V-S_nxgedPSY4/edit). Lead with the "Every Path" map slide.
+**Visual:** [Intake → Access Visuals](https://docs.google.com/presentation/d/1tL_y3qTbsalg2yBNouJ1_39k1SnZV0V-S_nxgedPSY4/edit). Lead with the "Every Path" map slide.
 
 For any flow where people apply, a person decides, and access follows: volunteers, new members, a
 cohort, a freelance roster, clients. The people doing the deciding should spend their time on
