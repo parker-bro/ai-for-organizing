@@ -6,7 +6,8 @@ description: >-
   work produces). Checks every item against existing work so nothing gets
   duplicated, catches decisions that make a written rule out of date, stages one numbered review,
   and writes nothing until a person approves. Use when
-  someone says "triage this meeting", "process this transcript", or "what came out of that meeting".
+  someone says "triage this meeting", "process this transcript", "what came out of that meeting",
+  or "run the weekly sweep".
 license: MIT
 ---
 
@@ -231,6 +232,29 @@ Give rule changes their own group, `📏 Rules flagged`: one line per file with 
   verbatim. This rule exists because that happened.
 - **Recurring meetings:** when an item fits better in an existing recurring forum ("raise at the
   monthly budget review"), flag it for that forum instead of minting a standalone task.
+
+## Optional: weekly sweep
+
+If you'd rather not paste each transcript, run one sweep a week instead. Point the skill at the
+folder where your notetaker saves transcripts and schedule the sweep (a scheduled task, a cron job,
+or a weekly reminder to say "run the weekly sweep"):
+
+```yaml
+transcript_source: "Google Drive › Meeting transcripts"   # wherever your notetaker saves them
+sweep_window_days: 7
+```
+
+1. **Find this week's meetings.** List the transcripts saved in the window. Skip any that were
+   already triaged (a decision or task already cites that meeting by name and date).
+2. **Run Steps 1–3b on each one.**
+3. **Stage one review for the whole week**, grouped by meeting and then by lane, numbered
+   straight through, so a single reply covers everything (`skip 4,9` · `go`). Check duplicates
+   across meetings too: the same task raised on Monday and Thursday is one record.
+4. **Then Steps 5 and 6, unchanged.** A sweep writes nothing until a person replies, the same as a
+   single triage. If no one replies, the sweep writes nothing at all.
+
+Run it on its own or with the rule check below. They fit together: the sweep catches the
+decisions made in meetings, and the rule check catches the ones made everywhere else.
 
 ## Optional: weekly rule check
 
