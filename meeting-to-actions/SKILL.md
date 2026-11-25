@@ -91,6 +91,16 @@ Rules:
 - A bug goes to the bug/feedback list first, then gets a linked fix task. It never goes straight
   to tasks, or you lose the link between "what broke" and "what we did about it".
 - If you can't tell which project something belongs to, **flag it in the review. Don't guess.**
+- **Give every item a confidence, with the reason.** It's a reading of the transcript, not a vote:
+  - **High:** the commitment is explicit. An owner and a verb, and usually a date ("Sam will send
+    the budget Friday").
+  - **Medium:** most of it is said, with one piece inferred (the owner is implied, or the date is
+    vague).
+  - **Low:** it sounds like work but nobody committed ("we should revisit pricing").
+
+  Low items go to the bottom of the review as `🤔 Probably not tasks`, so a reviewer can approve
+  the rest quickly. Confidence orders the review. It never replaces the approval: a High item still
+  waits for "go", and a Low item is still written if a person keeps it.
 
 **Deliverables get special handling, because they're what the work actually produces:**
 - **An existing asset is mentioned:** confirm it's in the deliverables catalog. If it's missing,
@@ -151,8 +161,8 @@ duplicate label and its project:
 📋 Meeting → Actions: [Meeting name] ([date])
 
 ✅ Action items → Tasks (3)
-  1. Send volunteer FAQ draft — owner: Sam — project: Volunteer Relaunch — ✅ New
-  2. Book venue for Oct 22 — owner: Ana — ⚠️ Matches "Venue for Show & Tell" (In Progress) → skip?
+  1. Send volunteer FAQ draft — owner: Sam — project: Volunteer Relaunch — ✅ New — High ("I'll send it Friday")
+  2. Book venue for Oct 22 — owner: Ana — ⚠️ Matches "Venue for Show & Tell" (In Progress) → skip? — Medium (owner implied)
 ⚡ Decisions (2)
   3. Going with the Thursday time slot — decided by: Ana, Sam — why: host availability
   3a. New volunteers get a buddy call before their first shift — decided by: Ana — supersedes "Self-serve onboarding" (Mar 4)
@@ -168,6 +178,8 @@ duplicate label and its project:
   7. Host guide (Doc) — exists in catalog, being changed → linked to a task · ⚠️ needs approval before it goes to hosts
 🏗️ Possible new projects (not created; need your OK)
   8. "Election-night volunteer roster" looks like multi-week work
+🤔 Probably not tasks (Low confidence; kept only if you say so)
+  9. Revisit the donor one-pager "at some point" — no owner, no commitment
 
 Reply `go` to write all · `skip 2,5` · `2→keep` · `4→decision` · `make project 8`
 ```
